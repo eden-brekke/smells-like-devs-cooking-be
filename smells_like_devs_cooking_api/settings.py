@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 import os
 from datetime import timedelta
-import django_heroku
+# import django_heroku
 
 from pathlib import Path
 import dotenv
@@ -140,9 +140,9 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATIC_ROOT = BASE_DIR / "staticfiles"
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR,"static/"),
-    )
+# STATICFILES_DIRS = (
+#     os.path.join(BASE_DIR,"static/"),
+#     )
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
@@ -178,4 +178,4 @@ dotenv_file = os.path.join(BASE_DIR, ".env")
 if os.path.isfile(dotenv_file):
     dotenv.load_dotenv(dotenv_file)
 
-django_heroku.settings(locals())
+# django_heroku.settings(locals())
