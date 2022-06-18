@@ -11,11 +11,11 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 import os
 from datetime import timedelta
+import django_heroku
 
 from pathlib import Path
 import dotenv
 from dotenv import load_dotenv
-import psycopg2
 
 load_dotenv()  # take environment variables from .env.
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -173,3 +173,4 @@ SIMPLE_JWT = {
 CSRF_TRUSTED_ORIGINS = [
     'https://smells-like-devs-cooking-api.herokuapp.com'
 ]
+django_heroku.settings(locals())
