@@ -92,7 +92,7 @@ WSGI_APPLICATION = 'smells_like_devs_cooking_api.wsgi.application'
 # }
 DATABASES = {
     "default": {
-        "ENGINE": os.getenv("DATABASE_ENGINE"),
+        "ENGINE": "django.db.backends.postgresql",  # os.getenv("DATABASE_ENGINE"),
         "NAME": os.getenv("DATABASE_NAME"),
         "USER": os.getenv("DATABASE_USER"),
         "PASSWORD": os.getenv("DATABASE_PASSWORD"),
