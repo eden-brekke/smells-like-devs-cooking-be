@@ -4,4 +4,4 @@ build:
 release:
   image: web
 run:
-  web: gunicorn project.wsgi --workers 10
+  web: gunicorn smells_like_devs_cooking_api.wsgi --workers 10
