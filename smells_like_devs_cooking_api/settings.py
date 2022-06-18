@@ -31,7 +31,7 @@ SECRET_KEY = 'django-insecure-e241wv7_w4+)$nhonmsj#=)7g(j$i7ck%t*p4q*0=i4_zmtu5%
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '0.0.0.0', 'https://smells-like-devs-cooking-api.herokuapp.com']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '0.0.0.0', 'smells-like-devs-cooking-api.herokuapp.com']
 
 
 # Application definition
