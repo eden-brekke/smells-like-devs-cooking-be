@@ -173,4 +173,9 @@ SIMPLE_JWT = {
 CSRF_TRUSTED_ORIGINS = [
     'https://smells-like-devs-cooking-api.herokuapp.com'
 ]
+
+dotenv_file = os.path.join(BASE_DIR, ".env")
+if os.path.isfile(dotenv_file):
+    dotenv.load_dotenv(dotenv_file)
+
 django_heroku.settings(locals())
