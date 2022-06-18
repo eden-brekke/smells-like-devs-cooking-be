@@ -96,6 +96,7 @@ celerybeat-schedule
 smells_like_devs_cooking_api/.env
 .venv
 env/
+.env
 venv/
 ENV/
 env.bak/
