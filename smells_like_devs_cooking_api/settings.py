@@ -79,7 +79,7 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
-ROOT_URLCONF = "project.urls"
+ROOT_URLCONF = "smells_like_devs_cooking_api.urls"
 
 TEMPLATES = [
     {
@@ -157,7 +157,7 @@ STATIC_ROOT = BASE_DIR / "staticfiles"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-AUTH_USER_MODEL = "accounts.CustomUser"
+# AUTH_USER_MODEL = "accounts.CustomUser"
 
 REST_FRAMEWORK = {
     "DEFAULT_PERMISSION_CLASSES": [
