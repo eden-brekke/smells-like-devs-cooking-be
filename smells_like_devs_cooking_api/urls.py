@@ -22,6 +22,10 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path("api-auth/", include("rest_framework.urls")),
     path("api/v1/blog/", include("blog.urls")),
+    path("api/v1/favorites/", include("favorites.urls")),
+
+    path("accounts/", include("accounts.urls")),
+
     path(
         "api/token/",
         jwt_views.TokenObtainPairView.as_view(),
@@ -33,3 +37,18 @@ urlpatterns = [
         name="token_refresh",
     ),
 ]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
