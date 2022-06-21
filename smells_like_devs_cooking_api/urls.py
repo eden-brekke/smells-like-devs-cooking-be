@@ -28,7 +28,7 @@ urlpatterns = [
 
     path(
         "api/token/",
-        jwt_views.TokenObtainPairView.as_view(),
+        MyTokenObtainPairView.as_view(),
         name="token_obtain_pair",
     ),
     path(
