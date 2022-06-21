@@ -5,7 +5,8 @@ from django.urls import reverse
 # Create your models here.
 class BlogPost(models.Model):
     owner = models.ForeignKey(get_user_model(), on_delete=models.CASCADE)
-    recipe_content = models.TextField(null=True)
+    recipe_ingredients = models.JSONField(default=list, null=True)
+    recipe_directions = models.JSONField(default=list, null=True)
     recipe_images = models.TextField(null=True)  # CHECK, what will these be stored as?
     title = models.CharField(max_length=64, null=True)
     difficulty = models.IntegerField(null=True)
@@ -15,8 +16,8 @@ class BlogPost(models.Model):
     meal_type = models.CharField(max_length=64, null=True)
 
 
-    created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now=True)
+    created_at = models.DateField(auto_now_add=True)
+    updated_at = models.DateField(auto_now=True)
 
     def __str__(self): 
         return self.title
