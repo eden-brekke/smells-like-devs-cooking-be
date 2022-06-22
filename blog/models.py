@@ -7,7 +7,7 @@ class BlogPost(models.Model):
     owner = models.ForeignKey(get_user_model(), on_delete=models.CASCADE)
     recipe_ingredients = models.JSONField(default=list, null=True)
     recipe_directions = models.JSONField(default=list, null=True)
-    recipe_images = models.TextField(null=True)  # CHECK, what will these be stored as?
+    recipe_images = models.URLField(max_length=2000, null=True)  # CHECK, what will these be stored as?
     title = models.CharField(max_length=64, null=True)
     difficulty = models.IntegerField(null=True)
     recipe_intro = models.TextField(null=True)
